@@ -1,4 +1,4 @@
-body, body h2 {
+.mainContent {
     /* background-color: #363a3f; */
     font-family: 'Source Sans Pro';
     display: flex;
@@ -6,7 +6,29 @@ body, body h2 {
     align-items: center;
     color: #154c79;
 }
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.headerCenter { 
+    margin-right: 2px;
 
+}
+.socialMedia { 
+    margin: 2px;
+}
+.header__right { 
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.socialMedia > a:hover {
+    opacity: .5;
+}
+.header__right:hover {
+    opacity: .5;
+}
 
 .avatar { 
     vertical-align: middle;

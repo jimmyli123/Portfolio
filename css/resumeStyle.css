@@ -1,0 +1,44 @@
+body {
+    font-family: 'Source Sans Pro';
+}
+body {
+    display: flex;
+}
+
+
+.mainPage {
+    padding: 1%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    
+}
+
+.sideDetails { 
+    padding-top: 2%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    width:23%;
+}
+
+p {
+    word-wrap: break-word;
+    width:65%;
+}
+
+.projectItem {
+    display: block;
+}
+
+.projectItem > h4 {
+    margin-bottom: 1px;
+}
+.topLeft {
+    display: flex;
+    margin: 5px;
+}
+.topLeft a{
+    margin-right: 15px;
+}
