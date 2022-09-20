@@ -1,10 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    --transition-delay: 0.5s;
+    --text-color: #154c79;
+    --background-color: white;
+    --button-text-color: var(--background-color);
+    --button-background-color: orangered;
+
+
+    font-family: 'Source Sans Pro';
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
+    /* color: #8dd9bf; */
+}
+
+/* Light/Dark Mode */
+
+body.dark {
+    --button-text-color: white;
+    --background-color: black;
+    --text-color: white;
+    --button-background-color: #d0d066
+}
+
+
+.sun, .moon {
+    font-size: 45px;
+}
+
+.theme {
+    margin: .5em;
+    display: flex;
+    color: var(--theme-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.toggle-theme-button { 
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: .3em;
+    padding: 1em;
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+.toggle-theme-button:hover, .toggle-theme-button:focus {
+    transform: scale(1.1);
+}
+
+
+
 .mainContent {
     /* background-color: #363a3f; */
-    font-family: 'Source Sans Pro';
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #154c79;
+    
+
 }
 .header {
     display: flex;
@@ -54,6 +115,7 @@
     border-radius: 8px;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 15px;
     /* color: #20CB3E; */
 }
 
@@ -90,4 +152,8 @@ p {
 
 .projectItem h2 {
     height: auto;
+}
+
+.fa-file {
+    
 }
