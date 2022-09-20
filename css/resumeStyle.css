@@ -1,8 +1,51 @@
-body {
+
+body { 
+    --transition-delay: 0.5s;
+    --text-color: black;
+    --background-color: white;
+    --button-text-color: white;
+    --button-background-color: black;
+    --download-button-text-color: blue;
+
     font-family: 'Source Sans Pro';
-}
-body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
     display: flex;
+}
+
+body.dark {
+    --background-color: #333;
+    --text-color: white;
+    --button-text-color: black;
+    --button-background-color: #d0d066;
+    --download-button-text-color: rgb(0, 255, 238);
+}
+
+.theme {
+    margin: .5em;
+    display: flex;
+    color: var(--theme-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.toggle-theme-button { 
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: .3em;
+    padding: 1em;
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+.toggle-theme-button:hover, .toggle-theme-button:focus {
+    transform: scale(1.1);
 }
 
 
@@ -13,6 +56,14 @@ body {
     flex-direction: column;
     width: 77%;
     
+}
+
+.fa-arrow-left { 
+    color: var(--text-color);
+}
+
+.fa-download {
+    color: var(--download-button-text-color);
 }
 
 .sideDetails { 
