@@ -6,8 +6,8 @@ body {
     --transition-delay: 0.5s;
     --text-color: #154c79;
     --background-color: white;
-    --button-text-color: var(--background-color);
-    --button-background-color: orangered;
+    --button-text-color: white;
+    --button-background-color: black;
 
 
     font-family: 'Source Sans Pro';
@@ -20,7 +20,7 @@ body {
 /* Light/Dark Mode */
 
 body.dark {
-    --button-text-color: white;
+    --button-text-color: black;
     --background-color: black;
     --text-color: white;
     --button-background-color: #d0d066
